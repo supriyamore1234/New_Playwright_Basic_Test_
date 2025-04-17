@@ -1,0 +1,36 @@
+how to install playwright
+npm init playwright@latest
+ 		package.json --node project management file
+		playwright.config,js--playwright configuration
+		tests --- we can all playwright tests
+		npn playwright -v --install vesion of playwright
+
+
+5)Install playwright using vs code extension
+		By default extecute in headless mode
+		npx playwright test 		
+		npx playwright test --headed(To run with head)
+		To show report : t>  npx playwright show-report
+
+
+
+@
+Q.How  To CREATE AND RUN PLAYWRIGHT TESTS
+------------------------------------------------------------------------
+
+PRODUCT STORE 
+ create new file under tests
+ 
+		
+How to create and Run Playwright Tests 
+npx playwright test                            runs all tests on all browsers in headless mode
+npx playwright test      MyTest.spec.js                      runs a specific test file
+npx playwright test      MyTest.spec.js   --project=chromium              
+
+
+To RUN in headed mode    npx playwright test HomePageTest.spec.js --project=chromium --headed 
+
+IN Debugmode             npx playwright test HomePageTest.spec.js --project=chromium --headed --debug
+
+------------------------------------------------------------------------------------------
+To validate we use expect
